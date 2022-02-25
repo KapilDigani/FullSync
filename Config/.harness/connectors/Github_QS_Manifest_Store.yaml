@@ -1,0 +1,20 @@
+connector:
+  name: Github QS Manifest Store
+  identifier: Github_QS_Manifest_Store
+  description:
+  orgIdentifier: KD
+  projectIdentifier: KD_QuickStart
+  type: Github
+  spec:
+    url: https://github.com/kubernetes/website
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: KapilDigani
+          tokenRef: account.KD_GitHub_PAT
+    delegateSelectors:
+    - kd1-gcp
+    executeOnDelegate: true
+    type: Repo
