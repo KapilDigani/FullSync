@@ -1,0 +1,12 @@
+connector:
+  name: K8s Cluster QS
+  identifier: K8s_Cluster_QS
+  description:
+  orgIdentifier: KD
+  projectIdentifier: KD_QuickStart
+  type: K8sCluster
+  spec:
+    credential:
+      type: InheritFromDelegate
+    delegateSelectors:
+    - kd1-gcp
