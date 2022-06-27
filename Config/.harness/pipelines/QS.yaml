@@ -67,4 +67,4 @@ pipeline:
     variables:
         - name: Test
           type: String
-          value: <+input>.allowedValues(abc,def,ert)
+          value: <+input>.allowedValues(abc,def,ert,nginx)
