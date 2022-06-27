@@ -13,7 +13,7 @@ pipeline:
               type: Deployment
               spec:
                   serviceConfig:
-                      serviceRef: <+pipeline.variables.Test>
+                      serviceRef: nginx
                       serviceDefinition:
                           type: Kubernetes
                           spec:
